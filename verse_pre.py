@@ -20,8 +20,8 @@ def extract_and_rename_ct_files(source_dir, save_dir):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_path', default='/Users/chrischow/Downloads/WeaklyRevision/', help='The path of totalsegmentator data')
-    parser.add_argument('--save_dir', default='/Users/chrischow/test_out/', help='The saving path after reorganizing')
+    parser.add_argument('--data_path', default='', help='The path of totalsegmentator data')
+    parser.add_argument('--save_dir', default='', help='The saving path after reorganizing')
     args = parser.parse_args()
     
     extract_and_rename_ct_files(args.data_path, args.save_dir)
